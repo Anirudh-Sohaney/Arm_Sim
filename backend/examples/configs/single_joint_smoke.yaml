@@ -1,0 +1,5 @@
+schema_version: 1
+arm_name: "single_joint_smoke_test"
+joints:
+  - name: "only_joint"
+    link_length: 10

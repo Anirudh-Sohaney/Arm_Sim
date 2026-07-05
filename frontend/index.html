@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotic Arm Simulator</title>
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <span id="arm-name">ROBOTIC ARM SIMULATOR</span>
+    <span id="connection-status" aria-live="polite">
+      <span id="status-dot" class="dot disconnected"></span>
+      <span id="status-text">disconnected</span>
+    </span>
+  </header>
+
+  <!-- VIEWS -->
+  <div id="views-container">
+    <div class="view-panel">
+      <div class="view-label">FRONT VIEW <span class="view-axis">(X horiz, Z vert)</span></div>
+      <canvas id="canvas-front"></canvas>
+    </div>
+    <div class="view-panel">
+      <div class="view-label">TOP VIEW <span class="view-axis">(X horiz, Y vert)</span></div>
+      <canvas id="canvas-top"></canvas>
+    </div>
+  </div>
+
+  <!-- JOINT READOUTS -->
+  <div id="readouts">
+    <div id="joint-readouts"></div>
+    <div id="end-effector-readout"></div>
+  </div>
+
+  <!-- ERROR BANNER -->
+  <div id="error-banner" class="hidden">
+    <span id="error-text"></span>
+    <button id="error-dismiss" aria-label="Dismiss">&times;</button>
+  </div>
+
+  <script src="/js/scale.js"></script>
+  <script src="/js/state.js"></script>
+  <script src="/js/connection_indicator.js"></script>
+  <script src="/js/renderer.js"></script>
+  <script src="/js/websocket_client.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+schema_version: 1
+arm_name: "six_axis_industrial"
+default_velocity: 45
+joints:
+  - { name: "base", axis: "z", link_length: 0, link_offset: 10, angle_min: -180, angle_max: 180 }
+  - { name: "shoulder", axis: "pitch", link_length: 30, angle_min: -90, angle_max: 90 }
+  - { name: "elbow", axis: "pitch", link_length: 25, angle_min: 0, angle_max: 150 }
+  - { name: "wrist_roll", axis: "z", link_length: 0, angle_min: -180, angle_max: 180 }
+  - { name: "wrist_pitch", axis: "pitch", link_length: 8, angle_min: -90, angle_max: 90 }
+  - { name: "wrist_yaw", axis: "yaw", link_length: 5, angle_min: -180, angle_max: 180 }

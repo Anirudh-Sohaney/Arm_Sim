@@ -1,0 +1,6 @@
+# Install runtime + dev dependencies:
+#   pip install -r requirements-dev.txt
+-r requirements.txt
+pytest>=7.0
+pytest-timeout>=2.0
+websockets>=12.0
