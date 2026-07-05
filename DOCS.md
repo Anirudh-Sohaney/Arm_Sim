@@ -44,7 +44,13 @@ WebSocket, and serves a real‑time 2D web dashboard.
 ## Installation
 
 ```bash
-pip install -e robotics_sim/backend/
+# Install directly from GitHub
+pip install git+https://github.com/Anirudh-Sohaney/Arm_Sim.git#subdirectory=backend
+
+# Or clone + install locally
+git clone https://github.com/Anirudh-Sohaney/Arm_Sim.git
+cd Arm_Sim
+pip install -e backend/
 ```
 
 Requires Python ≥ 3.10. Dependencies: `numpy`, `pyyaml`, `fastapi`, `uvicorn`.
@@ -52,7 +58,7 @@ Requires Python ≥ 3.10. Dependencies: `numpy`, `pyyaml`, `fastapi`, `uvicorn`.
 Optional dev deps (for WebSocket testing):
 
 ```bash
-pip install -e "robotics_sim/backend/[dev]"
+pip install -e "backend/[dev]"
 ```
 
 ---

@@ -5,6 +5,10 @@ Python package for configurable robotic arm forward‑kinematics simulation.
 ## Install
 
 ```bash
+# From GitHub (anywhere on your system)
+pip install git+https://github.com/Anirudh-Sohaney/Arm_Sim.git#subdirectory=backend
+
+# Or from within this cloned repo
 pip install -e .          # editable install
 pip install -e ".[dev]"   # with development dependencies
 ```

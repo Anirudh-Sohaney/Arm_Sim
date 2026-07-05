@@ -10,11 +10,19 @@ Built for two primary use cases:
 
 No physics engine, no 3D renderer. Pure kinematics with a lightweight web viewer.
 
-## Quickstart
+## Install
 
 ```bash
-pip install -e robotics_sim/backend/
+# Direct from GitHub
+pip install git+https://github.com/Anirudh-Sohaney/Arm_Sim.git#subdirectory=backend
+
+# Or clone + editable install
+pip install -e backend/
 ```
+
+Requires Python ≥ 3.10.
+
+## Quickstart
 
 ```python
 import armsim
@@ -117,7 +125,7 @@ python -m armsim run config.yaml --mode lan --port 8080 --record-to trajectory.j
 ## Development
 
 ```bash
-pip install -e "robotics_sim/backend/[dev]"
+pip install -e "backend/[dev]"
 ```
 
 ## License
